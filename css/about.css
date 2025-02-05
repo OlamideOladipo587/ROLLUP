@@ -1,0 +1,313 @@
+@@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NAVBAR */
+
+nav {
+position: relative;
+z-index: 99;
+/* justify-content: space-between; */
+align-items: center;
+/* border-bottom: 2px solid #5F9DF7; */
+background-color: #E8F9FF;
+/* text-align: left; */
+padding: 3rem 4rem;
+}
+.logoa{
+padding: 0 4rem;
+padding-left: 0;
+}
+.logo{
+width: 100px;
+float: left;
+margin-top: -20px;
+}
+
+/* nav img {
+padding-top: 1.5rem;
+padding-bottom: 1rem;
+width: 100%;
+} */
+
+/* .menu {
+display: none; */
+/* align-items: center; */
+/* margin: 0; */
+/* margin-right: 15rem; */
+/* font-family: "Cherry Bomb One"; */
+/* text-align: left; */
+/* margin-left: -10rem; */
+/* float: left;
+align-items: left;
+} */
+.menu{
+display: none;
+align-items: center;
+text-align: left;
+font-family: "Titan One";
+float: left;
+margin: 0;
+padding: 0;
+}
+
+.buynow{
+/* margin-left:  10rem; */
+background-color: #fff;
+font-weight: 600;
+padding: 8px 20px;
+border-radius: 99px;
+text-decoration: none;
+font-family: "Titan One";
+text-align: right;
+float: right;
+}
+.buynow a{
+text-decoration: none;
+color: #FF80B5;
+text-align: right;
+}
+
+.menu a{
+/* margin-top: 0 ;
+margin-bottom: 0; */
+font-weight: 600;
+text-decoration: none;
+transition: 0.4s;
+padding: 0 20px;
+/* border-radius: 99px; */
+color: #FF80B5;
+float: left;
+margin: 0;
+/* text-align: left; */
+}
+
+.menu a.is-active, .menu a:hover{
+/* background-color: #5F9DF7; */
+color: #D91E64;
+}
+.hamburger {
+appearance: none;
+outline: none;
+border: none;
+background: none;
+cursor: pointer;
+
+display: block;
+width: 2rem;
+height: 2rem;
+}
+
+.hamburger span {
+color: #FF80B5;
+font-size: 3rem;
+}
+
+.mobile-menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 98;
+padding-top: 6rem;
+opacity: 0;
+transform: translateY(-100%);
+background-color: #E8F9FF;
+color: #FFF;
+transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+opacity: 1;
+transform: translateY(0);
+}
+
+.mobile-menu a {
+display: block;
+padding: 1rem;
+color: #FF80B5;
+text-align: center;
+text-decoration: none;
+font-size: 1.25rem;
+transition: 0.3s;
+font-family: "Titan One";
+}
+
+.mobile-menu a:hover {
+color: #D91E64;
+background-color: #E8F9FF;
+}
+
+
+/* HOME SECTION */
+
+#about-home{
+  padding: 4rem;
+  padding-bottom: 3.5rem;
+  background-color: #E8F9FF;
+}
+#about-home h1{
+  font-family: "Titan One";
+  color: #FF80B5;
+  font-size: 4rem;
+}
+.about2{
+  margin-top: -3rem;
+}
+.about-background{
+  /* width: 100%; */
+  width: 100%;
+}
+
+/* ABOUT SECTION */
+
+#about{
+  padding: 6rem 4rem;
+  padding-left: 6rem;
+}
+.about-img{
+  width: 90%;
+}
+#about h1, h2{
+  font-family: "Titan One";
+  color: #FF80B5;
+  font-weight: 800;
+  font-size: 3rem;
+}
+#about h1{
+  color: #D91E64;
+}
+
+.about-msg{
+  padding-right: 10rem;
+  padding-top: 1rem;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* GALLERY SECTION */
+
+#galleryy{
+  padding: 4rem 2rem;
+}
+.galleryy{
+  width: 100%;
+}
+
+/* FOOTER SECTION */
+
+#footer{
+  padding: 5rem 10rem;
+  background-color: #E8F9FF;
+}
+#footer h2, h4{
+  font-family: "Titan One";
+  font-weight: 800;
+  font-size: 3rem;
+  color: #FF80B5;
+}
+#footer h2{
+  color: #D91E64;
+  font-size: 3.5rem;
+}
+#footer h5{
+  margin-top: 4rem;
+  font-size: 18px;
+}
+#footer i{
+  text-align: right;
+  padding: 10px;
+  background-color: #FF80B5;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+#footer i:hover{
+  background-color: #fff;
+  color: #FF80B5;
+}
+.footer2{
+  text-align: right;
+}
+#bottom-footer{
+  background-color: #E8F9FF;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-line{
+  padding: 0.5px 0;
+  background-color: #FF80B5;
+}
+.bottom-footer p{
+  margin: 3rem 0;
+  color: #b3b3b3;
+}
+
+
+
+/* MEDIA SECTION */
+
+@media (min-width: 768px) {
+	.mobile-menu, .hamburger {
+		display: none;
+	 }
+
+	.menu {
+		display: flex;
+    }
+	}
+  @media (max-width: 768px){
+    .buynow{
+      display: none;
+    }
+    body{
+     align-items: center;
+     text-align: center;
+   }
+   nav{
+     justify-content: space-between;
+     display: flex;
+   }
+   .logoa{
+     width: 30%;
+   }
+   #about-home{
+     padding: 4rem 2rem;
+     padding-bottom: 0;
+   }
+   .about-background{
+     width: 80%;
+     margin-top: 1.5rem;
+   }
+   #about{
+     padding: 6rem 2rem;
+   }
+   #about h2{
+     visibility: hidden;
+   }
+   .about-msg{
+     padding-right: 0;
+   }
+    .homeicecream{
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .homecircle{
+      margin-left: 0;
+    }
+    #footer{
+      padding: 4rem 4rem;
+    }
+    .footer2{
+      padding-top: 15px;
+      text-align: center;
+    }
+
+  }

@@ -1,0 +1,580 @@
+@@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  /* NAVBAR */
+#homesection{
+  background-image: url("../images/HomePageBackround.png");
+  padding-bottom: 21rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* padding-right: 3rem; */
+  background-color: #E8F9FF;
+}
+nav{
+	position: relative;
+	z-index: 99;
+	/* justify-content: space-between; */
+	align-items: center;
+	/* border-bottom: 2px solid #5F9DF7; */
+  /* background-color: #E8F9FF; */
+  /* text-align: left; */
+	padding: 3rem 4rem;
+}
+.logoa{
+  padding: 0 4rem;
+  padding-left: 0;
+}
+.logo{
+  width: 100px;
+  float: left;
+  margin-top: -20px;
+}
+
+/* nav img {
+	padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  width: 100%;
+} */
+
+/* .menu {
+	display: none; */
+	/* align-items: center; */
+	/* margin: 0; */
+  /* margin-right: 15rem; */
+  /* font-family: "Cherry Bomb One"; */
+  /* text-align: left; */
+  /* margin-left: -10rem; */
+  /* float: left;
+  align-items: left;
+} */
+.menu{
+	display: none;
+	align-items: center;
+  text-align: left;
+  font-family: "Titan One";
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.buynow{
+  /* margin-left:  10rem; */
+  background-color: #fff;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 99px;
+  text-decoration: none;
+  font-family: "Titan One";
+  text-align: right;
+  float: right;
+}
+.buynow a{
+  text-decoration: none;
+  color: #FF80B5;
+  text-align: right;
+}
+
+.menu a{
+  /* margin-top: 0 ;
+  margin-bottom: 0; */
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 0 20px;
+  /* border-radius: 99px; */
+  color: #FF80B5;
+  float: left;
+  margin: 0;
+  /* text-align: left; */
+}
+
+.menu a.is-active, .menu a:hover{
+  /* background-color: #5F9DF7; */
+  color: #D91E64;
+}
+.hamburger {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.hamburger span {
+	color: #FF80B5;
+	font-size: 3rem;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 98;
+	padding-top: 6rem;
+	opacity: 0;
+	transform: translateY(-100%);
+	background-color: #E8F9FF;
+	color: #FFF;
+	transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	display: block;
+	padding: 1rem;
+	color: #FF80B5;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: 0.3s;
+  font-family: "Titan One";
+}
+
+.mobile-menu a:hover {
+  color: #D91E64;
+  background-color: #E8F9FF;
+}
+
+/* HOME SECTION */
+.homebtn{
+  padding-left: 4rem;
+  padding-top: 17rem;
+}
+/* #home{
+  background-color: #E8F9FF;
+  background-image: url("../images/homebackground.png");
+  padding-top: 1rem;
+  padding-right: 1rem;
+  background-size: cover;
+  /* padding-bottom: 40rem; */
+  /* padding-bottom: 1.9rem; */
+}
+.homecircle{
+  width: 30rem;
+  height: 31rem;
+  background-color: #C6E5F9;
+  border-radius: 100%;
+  margin-left: 40%;
+  visibility: hidden;
+
+}
+.homeicecream{
+  width: 47%;
+  height: 100%;
+  margin-top: 2.5rem;
+  margin-left: 8rem;
+}
+
+.home1{
+  /* margin: 6% 3%; */
+  margin-top: -35%;
+  padding-left: 4rem;
+}
+.home1 p{
+  font-family: "Titan One";
+  font-weight: 600;
+  font-size: 40px;
+  /* margin-top: -40px; */
+  margin-bottom: -20px;
+  color: #5A7D98;
+  padding-top: 0;
+}
+#passiontxt{
+  color: #D91E64;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+.products-btn, .made-btn{
+  border-radius: 99px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.products-btn{
+  background-color: #FF5E78;
+  border-color: #FF5E78;
+  border: none;
+}
+.made-btn{
+  background-color: #FFC1DC;
+  color: #C30E59;
+  border: none;
+}
+.cafes, .trucks{
+  text-align: right;
+  padding-right: 7.5rem;
+  padding-bottom: 2rem;
+
+}
+.cafes p{
+  color: #D91E64;
+  font-size: 3rem;
+}
+.trucks p{
+  color: #D91E64;
+  font-size: 3rem;
+}
+#mini-txt1, #mini-txt2{
+  font-size: 1rem;
+  padding-top: 1rem;
+  font-family: sans-serif;
+  color: #8F8F8F;
+}
+.mini-circle{
+  width: 1.5rem;
+  margin-top: -2.8rem;
+  margin-right: -4rem;
+}
+.milkjug{
+  padding-left: 4rem;
+  width: 45%;
+}
+.milkmsg{
+  padding: 5px 8rem;
+  margin-top: -10.5rem;
+  margin-left: 7.5rem;
+  color: #5A7D98;
+  font-size: 0.9rem;
+}
+.milk-btn{
+  border-radius: 100%;
+  padding: 4px 12px;
+  padding-bottom: 5px;
+  background-color: #fff;
+  border: none;
+  margin-top: 1rem;
+}
+.milk-arrow{
+  color: #C30E59;
+  font-size: 0.7rem;
+}
+.tasty{
+  visibility: hidden;
+  text-align: right;
+  padding-right: 7.5rem;
+  margin-top: -10rem;
+}
+.so-tasty{
+  width: 51%;
+  /* margin-top: 18rem; */
+}
+
+/* BOOK SECTION */
+#booksection{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-right: 1rem;
+  background-color: #fff;
+}
+.book1{
+  /* padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem; */
+  /* background-color:   #e6f7ff;
+  clip-path: ellipse(90% 70% at 10% 50%); */
+}
+.book{
+  width: 80%;
+  margin-left: 4rem;
+  border-radius: 15px;
+  margin-top: 7rem;
+  /* margin-left: -50px; */
+  /* border-top: 30px solid #C6E5F9;
+  border-bottom: 30px solid #C6E5F9;
+  border-right: 30px solid #C6E5F9;
+  border-radius: 50% 50% 0 0  / 20% 20% 0 0; */
+}
+.book2{
+  /* padding-left: 6rem; */
+  /* padding-right: 2rem; */
+  /* background-color: black; */
+}
+.book2 p{
+  margin-bottom: -30px;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #D91E64;
+  font-family:"Titan One";
+}
+.booktxt{
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  padding-top: 3rem;
+  padding-right: 5rem;
+  padding-bottom: 10px;
+  font-weight: 900;
+  color: #5A7D98;
+  line-height: 1.5rem;
+}
+.book2 i{
+  color: #D91E64;
+  font-size: 20px;
+}
+.book-btn{
+  background-color: #fff;
+  color: #D91E64;
+  border: 5px solid #D91E64;
+  padding: 0.5rem 2rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+/* REVIEWS SECTION */
+#reviews{
+  padding: 4rem 8rem;
+  background-color: #C6E5F9;
+}
+#reviews h2, h3{
+  font-family: "Titan One";
+  color: #FF80B5;
+  text-align: center;
+  font-size: 2.5rem;
+}
+#reviews h3{
+  font-size: 3.2rem;
+  color: #D91E64;
+}
+
+.card{
+  padding: 6rem 1rem;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.stardiv{
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+.name-div{
+  font-size: 1.5rem;
+}
+.card1{
+  background-color: #FFCCEA;
+  margin-top: -3rem;
+}
+.card2{
+  background-color: #E1FFBB;
+  margin-top: -3rem;
+}
+.card3{
+  background-color: #EDE8DC;
+  margin-top: -3rem;
+}
+/* .review-circle1{
+  width: 30%;
+  padding: 7rem;
+  background-color: #ffb3df;
+  border-radius: 100%;
+  margin-left: 3rem;
+  margin-bottom: -9rem;
+  margin-top: -7.5rem;
+}
+.review-circle2{
+  width: 30%;
+  padding: 7rem;
+  background-color: #d3ff99;
+  border-radius: 100%;
+  margin-left: 3rem;
+  margin-bottom: -9rem;
+  margin-top: -7.5rem;
+}
+.review-circle3{
+  width: 30%;
+  padding: 7rem;
+  background-color:  #dcd3bc;
+  border-radius: 100%;
+  margin-left: 3rem;
+  margin-top: -7.5rem;
+  margin-bottom: -9rem;
+} */
+
+.pricing-column{
+  text-align: center;
+}
+.reviewimg{
+  width: 200px;
+  padding-bottom: 0;
+  margin-left: -2.5rem;
+}
+.reviewimg2{
+  width: 69%;
+  margin-left: 3.3rem;
+}
+.reviewimg3{
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: 3.2rem;
+  /* margin-left: 4rem; */
+}
+/* .pricing-column{
+  margin-top: -7rem;
+} */
+
+/* GALLERY SECTION */
+
+#galleryy{
+  padding: 4rem 2rem;
+}
+.galleryy{
+  width: 100%;
+}
+
+/* FOOTER SECTION */
+
+#footer{
+  padding: 5rem 10rem;
+  background-color: #E8F9FF;
+}
+#footer h2, h4{
+  font-family: "Titan One";
+  font-weight: 800;
+  font-size: 3rem;
+  color: #FF80B5;
+}
+#footer h2{
+  color: #D91E64;
+  font-size: 3.5rem;
+}
+#footer h5{
+  margin-top: 4rem;
+  font-size: 18px;
+}
+#footer i{
+  text-align: right;
+  padding: 10px;
+  background-color: #FF80B5;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+#footer i:hover{
+  background-color: #fff;
+  color: #FF80B5;
+}
+.footer2{
+  text-align: right;
+}
+#bottom-footer{
+  background-color: #E8F9FF;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-line{
+  padding: 0.5px 0;
+  background-color: #FF80B5;
+}
+.bottom-footer p{
+  margin: 3rem 0;
+  color: #b3b3b3;
+}
+
+/* MEDIA SECTION */
+
+@media (min-width: 768px) {
+	.mobile-menu, .hamburger {
+		display: none;
+	 }
+
+	.menu {
+		display: flex;
+    }
+	}
+  @media (max-width: 768px){
+    .buynow{
+      display: none;
+    }
+    body{
+     align-items: center;
+   }
+   nav{
+     justify-content: space-between;
+     display: flex;
+   }
+   #home{
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding-bottom: 1rem
+   }
+   .logoa{
+     width: 30%;
+   }
+    .homeicecream{
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .homecircle{
+      margin-left: 0;
+      display: none;
+    }
+    .home1{
+      padding-top: 13rem;
+    }
+    .home2{
+      display: none;
+    }
+    .second-div{
+      display: none;
+    }
+    .book{
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 0;
+    }
+    .book2{
+      text-align: center;
+      align-items: center;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .book2 p{
+      font-size: 2.5rem;
+    }
+    .booktxt{
+      text-align: justify;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .review-circle1, .review-circle2, .review-circle3{
+      align-items: center;
+      visibility: hidden;
+      margin-right: 0;
+    }
+    #reviews{
+      padding: 4rem 2rem;
+    }
+    #reviews h3{
+      font-size: 2.5rem;
+    }
+    .pricing-column{
+      align-items: center;
+    }
+    #footer{
+      padding: 4rem 4rem;
+      text-align: center;
+    }
+    .footer2{
+      padding-top: 15px;
+      text-align: center;
+      align-items: center;
+    }
+  }
